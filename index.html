@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website - Portfolio and professional information">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Your Name</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Nithin Balamurugan</span>
+                </h1>
+                <p class="hero-subtitle">I'm a computer science student at Western University</p>
+                <p class="hero-description">
+                    Breaking into AI and research for Tiny Recursive Models (TRMs).
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <img src="LinkedIn.PNG" alt="Your Name" />
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a 3rd year student breaking away from just software development and into AI and new tech 
+                        research. I'm currently working for a startup at Cognitome.ai, where I am working with webdev
+                        and hands on work with AI.  I've co-authored our first paper "Tiny Recursive Models on ARC-AGI-1- Inductive Biases, Identity 
+                        Conditioning, and Test-Time Compute". 
+                    </p>
+                    <p>
+                        I'm hoping to futher grow my knowledge and work expirience in a professional work environment and working towards 
+                        a career in tech consulting and sales/product managment. 
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <div class="skills-grid">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">C/C++</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">R</span>
+                                <span class="skill-tag">COBOL</span>
+                                <span class="skill-tag">JCL</span>
+                                <span class="skill-tag">REXX</span>
+                                <span class="skill-tag">MATLAB</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Frameworks & Tools</h3>
+                            <div class="skills-grid">
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">Flask</span>
+                                <span class="skill-tag">JUnit</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">IBM Mainframe</span>
+                                <span class="skill-tag">Zowe CLI</span>
+                                <span class="skill-tag">OpenAI API</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Libraries</h3>
+                            <div class="skills-grid">
+                                <span class="skill-tag">Tailwind CSS</span>
+                                <span class="skill-tag">PostCSS</span>
+                                <span class="skill-tag">ESLint</span>
+                                <span class="skill-tag">npm</span>
+                                <span class="skill-tag">Pandas</span>
+                                <span class="skill-tag">NumPy</span>
+                                <span class="skill-tag">Matplotlib</span>
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">Hugging Face</span>
+                                <span class="skill-tag">PyMuPDF</span>
+                                <span class="skill-tag">Docling</span>
+                                <span class="skill-tag">Tesseract OCR</span>
+                                <span class="skill-tag">RapidOCR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" fill="#e8e8e8"/>
+                                <text x="200" y="150" font-family="Arial" font-size="18" fill="#999" text-anchor="middle">Project Image</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Finance Tracker</h3>
+                        <p class="project-description">
+                            Built a full-stack AI finance chatbot using React, Node.js, and PostgreSQL to track expenses, 
+                            manage budgets, and visualize spending. Integrated a Python-based AI backend (FastAPI, OpenAI API, Pandas) 
+                            for natural-language queries and personalized insights; deployed with Docker on Heroku/Vercel.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>OpenAI</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Project</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" fill="#e8e8e8"/>
+                                <text x="200" y="150" font-family="Arial" font-size="18" fill="#999" text-anchor="middle">Project Image</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">CSV Converter</h3>
+                        <p class="project-description">
+                            Developed a high-accuracy PDF-to-CSV conversion algorithm using Python that extracts every table 
+                            into separate CSV files, generates a full-document text file, and outputs structural metadata files 
+                            detailing table outlines, dimensions, and formatting—robust across any document layout. Built a modular 
+                            extraction pipeline using Docling, PyMuPDF, Pandas, and a 3-layer OCR stack.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>PyMuPDF</span>
+                            <span>OCR</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Project</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" fill="#e8e8e8"/>
+                                <text x="200" y="150" font-family="Arial" font-size="18" fill="#999" text-anchor="middle">Project Image</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tiny Recursive Models Research Paper</h3>
+                        <p class="project-description">
+                            Co-authored "Tiny Recursive Models on ARC-AGI-1: Inductive Biases, Identity Conditioning, and Test-Time Compute", 
+                            analyzing the behavior of Tiny Recursive Models (TRMs) on the ARC-AGI-1 benchmark. Performed empirical ablations 
+                            and efficiency analyses to isolate the impact of test-time compute, puzzle-identity conditioning, and recursion depth 
+                            on model performance. Benchmarked TRMs against a QLoRA-fine-tuned LLaMA 3 8B baseline.
+                        </p>
+                        <div class="project-tags">
+                            <span>Research</span>
+                            <span>AI/ML</span>
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Paper</a>
+                            <a href="#" class="project-link">arXiv</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" fill="#e8e8e8"/>
+                                <text x="200" y="150" font-family="Arial" font-size="18" fill="#999" text-anchor="middle">Project Image</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-description">
+                            Developed a personal portfolio website to showcase projects in depth and share background and skills. 
+                            Implemented using Next.js, React, TypeScript, server-side rendering (SSR), React Hooks, Tailwind CSS, 
+                            PostCSS, responsive design, dark mode, animations, form handling, ESLint, Node.js, npm, and Next.js Google Fonts.
+                        </p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>PostCSS</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Website</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, or opportunities
+                        to be part of your vision. Feel free to reach out!
+                    </p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:nithinbala08@gmail.com" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/nithinbala08-cyber" target="_blank" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/nithinbala05" target="_blank" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
