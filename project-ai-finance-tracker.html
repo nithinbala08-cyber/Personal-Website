@@ -121,6 +121,19 @@
             background-color: var(--primary-color);
             color: white;
         }
+        .project-video-container {
+            width: 100%;
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .project-detail-video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+        }
         @media (max-width: 600px) {
             .project-detail-title {
                 font-size: 2rem;
@@ -188,6 +201,12 @@
                     allows users to track expenses, manage budgets, and get personalized financial insights through natural language 
                     interactions.
                 </p>
+                <div class="project-video-container">
+                    <video class="project-detail-video" controls autoplay loop muted playsinline>
+                        <source src="Visuals/FinanceTracker.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
                 <h2>Key Features</h2>
                 <ul>
@@ -233,8 +252,8 @@
                 </p>
 
                 <div class="project-links-detail">
-                    <a href="#" class="project-link-detail">View Project</a>
-                    <a href="#" class="project-link-detail secondary">GitHub</a>
+                    <a href="https://ai-finance-tracker-orcin-phi.vercel.app/" target="_blank" class="project-link-detail">View Project</a>
+                    <a href="https://github.com/nithinbala08-cyber/AI-Finance-Tracker" target="_blank" class="project-link-detail secondary">GitHub</a>
                 </div>
             </div>
         </div>
