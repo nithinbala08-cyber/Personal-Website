@@ -386,6 +386,12 @@ body {
     margin-top: 3rem;
 }
 
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .project-card {
     background-color: var(--bg-color);
     border-radius: 15px;
@@ -393,9 +399,13 @@ body {
     box-shadow: var(--shadow);
     transition: var(--transition);
     border: 1px solid var(--border-color);
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.project-card:hover {
+.project-card-link:hover .project-card {
     transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
     border-color: var(--primary-color);
@@ -456,6 +466,7 @@ body {
     font-weight: 600;
     transition: var(--transition);
     position: relative;
+    display: inline-block;
 }
 
 .project-link::after {
@@ -469,8 +480,12 @@ body {
     transition: var(--transition);
 }
 
-.project-link:hover::after {
+.project-card-link:hover .project-link::after {
     width: 100%;
+}
+
+.project-card-link:hover .project-link {
+    color: var(--primary-color);
 }
 
 /* Contact Section */

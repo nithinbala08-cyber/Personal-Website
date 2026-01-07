@@ -54,6 +54,28 @@ git push -u origin main
 - **Username:** nithinbala08-cyber
 - **Branch:** main
 
+## After Successful Push ✅
+
+**Verify your code is on GitHub:**
+- Visit: https://github.com/nithinbala08-cyber/Personal-Website
+- You should see all your files!
+
+**For future pushes (after initial setup):**
+```bash
+git add .
+git commit -m "Your commit message"
+git push
+```
+Note: You only need `git push` now (no need for `-u origin main` after the first time)
+
+**Enable GitHub Pages (Optional):**
+1. Go to your repository on GitHub
+2. Click **Settings** → **Pages**
+3. Under "Source", select **Deploy from a branch**
+4. Choose branch: `main` and folder: `/(root)`
+5. Click **Save**
+6. Your site will be live at: `https://nithinbala08-cyber.github.io/Personal-Website/`
+
 ## Troubleshooting
 
 **If push fails:**
@@ -66,4 +88,5 @@ git push -u origin main
 - Check your GitHub username and repository name
 - Verify you have write access to the repository
 - Try re-authenticating with `gh auth login`
+- Make sure your Personal Access Token has the `repo` scope
 
