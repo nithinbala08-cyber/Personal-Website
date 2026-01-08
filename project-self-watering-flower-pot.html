@@ -121,6 +121,19 @@
             background-color: var(--primary-color);
             color: white;
         }
+        .project-video-container {
+            width: 100%;
+            margin: 2rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        .project-detail-video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+        }
         @media (max-width: 600px) {
             .project-detail-title {
                 font-size: 2rem;
@@ -185,6 +198,14 @@
                     moisture levels and automatically watering plants when needed. This system ensures plants receive adequate hydration even when 
                     owners are away for extended periods, making it ideal for busy individuals or frequent travelers.
                 </p>
+                
+                <h3>How this works:</h3>
+                <div class="project-video-container">
+                    <video class="project-detail-video" controls autoplay loop muted playsinline>
+                        <source src="Visuals/WaterPlant.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
                 <h2>Key Features</h2>
                 <ul>
@@ -243,8 +264,7 @@
                 </ul>
 
                 <div class="project-links-detail">
-                    <a href="#" class="project-link-detail">View Project</a>
-                    <a href="#" class="project-link-detail secondary">GitHub</a>
+                    <a href="https://github.com/nithinbala08-cyber/Self-Watering-flower-pot" target="_blank" class="project-link-detail secondary">GitHub</a>
                 </div>
             </div>
         </div>
