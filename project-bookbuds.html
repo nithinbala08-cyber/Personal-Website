@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI Finance Tracker - Full-stack AI finance chatbot project">
-    <title>AI Finance Tracker - Nithin Balamurugan</title>
+    <meta name="description" content="BookBuds - Full-stack mobile reading log application">
+    <title>BookBuds - Nithin Balamurugan</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,19 +121,6 @@
             background-color: var(--primary-color);
             color: white;
         }
-        .project-video-container {
-            width: 100%;
-            margin: 2rem 0;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-        .project-detail-video {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 15px;
-        }
         @media (max-width: 600px) {
             .project-detail-title {
                 font-size: 2rem;
@@ -173,99 +160,85 @@
             </a>
 
             <div class="project-detail-header">
-                <h1 class="project-detail-title">AI Finance Tracker</h1>
+                <h1 class="project-detail-title">BookBuds</h1>
                 <div class="project-detail-meta">
                     <div class="project-detail-tags">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>PostgreSQL</span>
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>OpenAI</span>
-                        <span>Supabase</span>
-                        <span>Docker</span>
+                        <span>React Native</span>
+                        <span>Expo</span>
+                        <span>Firebase</span>
+                        <span>Firestore</span>
+                        <span>AsyncStorage</span>
+                        <span>AI</span>
                     </div>
                 </div>
             </div>
 
             <div class="project-detail-content">
                 <p>
-                    Built a full-stack AI finance application using React, Node.js, and PostgreSQL to track expenses, budgets, and spending, 
-                    with secure user authentication and account management via Supabase, including protected routes, session handling, 
-                    and user-specific data isolation. Developed a Python-based AI backend (FastAPI) that leverages Pandas for data analysis 
-                    and OpenAI GPT-3.5-turbo for natural language processing, implementing a hybrid AI system where Pandas DataFrames process 
-                    financial data (calculating category breakdowns, monthly trends, and budget comparisons) while OpenAI API generates 
-                    conversational, context-aware responses with personalized financial insights based on real-time user data.
+                    BookBuds is a full-stack mobile reading log application built with React Native and Expo. The app enables 
+                    chapter-level note-taking with offline-first persistence via AsyncStorage and provides cross-platform support 
+                    for both iOS and Android devices. The application features social capabilities, real-time collaboration, and 
+                    AI-powered note summarization.
                 </p>
 
                 <h2>Overview</h2>
                 <p>
-                    The AI Finance Tracker is a comprehensive financial management application that combines modern web technologies 
-                    with artificial intelligence to provide users with an intuitive way to manage their finances. The application 
-                    allows users to track expenses, manage budgets, and get personalized financial insights through natural language 
-                    interactions.
+                    BookBuds addresses the need for a comprehensive reading companion that combines personal note-taking with 
+                    social interaction. Users can track their reading progress, take detailed notes at the chapter level, and 
+                    share insights with friends. The app's offline-first architecture ensures that users can continue taking 
+                    notes even without an internet connection, with automatic synchronization when connectivity is restored.
                 </p>
-                <div class="project-video-container">
-                    <video class="project-detail-video" controls autoplay loop muted playsinline>
-                        <source src="Visuals/FinanceTracker.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
 
                 <h2>Key Features</h2>
                 <ul>
-                    <li>Secure user authentication and account management via Supabase</li>
-                    <li>Protected routes, session handling, and user-specific data isolation</li>
-                    <li>Natural language expense tracking and queries</li>
-                    <li>Automated budget management and alerts</li>
-                    <li>Interactive spending visualizations</li>
-                    <li>Hybrid AI system combining Pandas data processing with OpenAI GPT-3.5-turbo</li>
-                    <li>Real-time financial insights based on user data</li>
-                    <li>Category breakdowns, monthly trends, and budget comparisons</li>
-                    <li>Conversational, context-aware AI responses</li>
+                    <li><strong>Chapter-Level Note-Taking:</strong> Organize notes by chapter for better book organization and reference</li>
+                    <li><strong>Offline-First Architecture:</strong> Full functionality available offline using AsyncStorage for local persistence</li>
+                    <li><strong>Cross-Platform Support:</strong> Native iOS and Android apps built with React Native and Expo</li>
+                    <li><strong>Social Features:</strong> User accounts, friend connections, and real-time commenting on shared chapter notes</li>
+                    <li><strong>AI-Powered Summarization:</strong> Integrated AI chatbot to summarize and clarify user notes</li>
+                    <li><strong>Real-Time Collaboration:</strong> Cloud Firestore enables instant updates and synchronization across devices</li>
+                    <li><strong>Performance Optimization:</strong> Auto-save debouncing, lazy-loaded Firestore queries, and modular service-layer architecture</li>
                 </ul>
 
                 <h2>Technology Stack</h2>
                 <h3>Frontend</h3>
                 <ul>
-                    <li><strong>React</strong> - Modern UI framework for building interactive user interfaces</li>
-                    <li><strong>Node.js</strong> - JavaScript runtime for server-side operations</li>
+                    <li><strong>React Native</strong> - Cross-platform mobile framework for iOS and Android</li>
+                    <li><strong>Expo</strong> - Development platform and toolchain for React Native apps</li>
+                    <li><strong>AsyncStorage</strong> - Local storage solution for offline-first data persistence</li>
                 </ul>
 
-                <h3>Backend</h3>
+                <h3>Backend & Services</h3>
                 <ul>
-                    <li><strong>Python</strong> - Core programming language for AI backend</li>
-                    <li><strong>FastAPI</strong> - High-performance web framework for building APIs</li>
-                    <li><strong>OpenAI API</strong> - Natural language processing and AI capabilities</li>
-                    <li><strong>Pandas</strong> - Data manipulation and analysis</li>
-                </ul>
-
-                <h3>Database & Authentication</h3>
-                <ul>
-                    <li><strong>PostgreSQL</strong> - Relational database for storing financial data</li>
-                    <li><strong>Supabase</strong> - User authentication, account management, protected routes, and session handling</li>
-                </ul>
-
-                <h3>Deployment</h3>
-                <ul>
-                    <li><strong>Docker</strong> - Containerization for consistent deployment</li>
-                    <li><strong>Vercel</strong> - Cloud hosting platform</li>
+                    <li><strong>Firebase Authentication</strong> - Secure user authentication and account management</li>
+                    <li><strong>Cloud Firestore</strong> - NoSQL database for real-time data synchronization</li>
+                    <li><strong>AI Integration</strong> - Chatbot functionality for note summarization and clarification</li>
                 </ul>
 
                 <h2>Implementation Highlights</h2>
                 <p>
-                    The application features a modular architecture with a React frontend communicating with a Node.js API server, 
-                    which in turn interfaces with a Python-based AI service. The AI backend processes natural language queries 
-                    using the OpenAI API and performs data analysis with Pandas to generate personalized financial insights.
+                    The application architecture prioritizes offline functionality and performance. AsyncStorage provides local 
+                    persistence, allowing users to take notes and interact with the app without an internet connection. When 
+                    connectivity is available, changes are automatically synchronized with Cloud Firestore.
                 </p>
                 <p>
-                    All components are containerized using Docker, ensuring consistent deployment across different environments. 
-                    The PostgreSQL database securely stores user financial data with proper authentication and authorization mechanisms.
+                    The social features leverage Firebase Authentication for secure user management and Cloud Firestore's real-time 
+                    capabilities for instant updates. Users can connect with friends, share chapter notes, and engage in real-time 
+                    discussions about their reading.
+                </p>
+                <p>
+                    Performance optimizations include auto-save debouncing to reduce unnecessary writes, lazy-loaded Firestore 
+                    queries to minimize data transfer, and a modular service-layer architecture that separates concerns and 
+                    improves maintainability.
+                </p>
+                <p>
+                    The AI chatbot integration enhances the user experience by providing intelligent summarization and clarification 
+                    of notes, helping users better understand and organize their reading insights.
                 </p>
 
                 <div class="project-links-detail">
-                    <a href="https://ai-finance-tracker-orcin-phi.vercel.app/" target="_blank" class="project-link-detail">View Project</a>
-                    <a href="https://github.com/nithinbala08-cyber/AI-Finance-Tracker" target="_blank" class="project-link-detail secondary">GitHub</a>
+                    <a href="#" class="project-link-detail" onclick="alert('BookBuds is currently in development. Demo coming soon!'); return false;">View App</a>
+                    <a href="#" class="project-link-detail secondary" onclick="alert('Repository will be available upon public release.'); return false;">GitHub</a>
                 </div>
             </div>
         </div>
@@ -281,4 +254,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

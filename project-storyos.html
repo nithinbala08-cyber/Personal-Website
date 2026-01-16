@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StoryOS - Deterministic Video Orchestration Platform">
+    <title>StoryOS - Nithin Balamurugan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding: 120px 20px 60px;
+            background-color: var(--bg-color);
+            min-height: 100vh;
+        }
+        .project-detail-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            color: var(--secondary-color);
+            transform: translateX(-5px);
+        }
+        .project-detail-header {
+            margin-bottom: 3rem;
+        }
+        .project-detail-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .project-detail-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .project-detail-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .project-detail-tags span {
+            padding: 8px 20px;
+            background-color: var(--bg-light);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+        .project-detail-content {
+            line-height: 1.8;
+        }
+        .project-detail-content h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        .project-detail-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .project-detail-content p {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+        .project-detail-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .project-detail-content li {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+        .project-links-detail {
+            display: flex;
+            gap: 1rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        .project-link-detail {
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-block;
+        }
+        .project-link-detail:hover {
+            background-color: var(--bg-grey);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+        .project-link-detail.secondary {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        .project-link-detail.secondary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .investment-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .highlight-box {
+            background-color: var(--bg-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        @media (max-width: 600px) {
+            .project-detail-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Nithin Balamurugan</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="project-detail-container">
+            <a href="index.html#projects" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Projects
+            </a>
+
+            <div class="project-detail-header">
+                <div class="investment-badge" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">Seeking $1M Investment from Comcast</div>
+                <h1 class="project-detail-title">StoryOS – Deterministic Video Orchestration</h1>
+                <div class="project-detail-meta">
+                    <div class="project-detail-tags">
+                        <span>AI/ML</span>
+                        <span>Video Generation</span>
+                        <span>Python</span>
+                        <span>3D Rendering</span>
+                        <span>Orchestration</span>
+                        <span>Startup</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-detail-content">
+                <div class="highlight-box">
+                    <p><strong>About Comcast:</strong> Comcast Corporation is one of the world's largest telecommunications and media conglomerates, operating cable television, broadband internet, telephone services, and content production through NBCUniversal. With a market cap exceeding $150 billion, Comcast is a major player in entertainment, technology, and telecommunications infrastructure.</p>
+                    <p style="margin-top: 1rem; margin-bottom: 0;"><strong>Current Status:</strong> We are currently building a proof-of-concept demo to demonstrate StoryOS's capabilities and secure a $1 million investment from Comcast. This demo will prove that deterministic script-to-video compilation is not only possible but represents the future of AI storytelling.</p>
+                </div>
+
+                <h2>Executive Summary</h2>
+                <p>
+                    StoryOS is an AI-native storytelling platform that transforms written scripts into cinematic, deterministic video stories. Unlike current prompt-based AI video tools, StoryOS introduces structure, control, and repeatability into AI storytelling, allowing creators to translate creative intent into consistent visual output.
+                </p>
+                <p>
+                    The global AI video market is currently experiencing a "Gold Rush" as tech giants like OpenAI (Sora), Google (Veo), Alibaba (Wan 2.6), and Runway compete to build the most powerful video generators. However, for professional storytellers and businesses, a critical gap remains: current tools function like slot machines where you write a prompt, pull the lever, and hope for a good result.
+                </p>
+
+                <h2>The Problem We're Solving</h2>
+                <p>
+                    Current AI video generation tools suffer from fundamental limitations that prevent them from being usable for real storytelling, IP creation, or production workflows:
+                </p>
+                <ul>
+                    <li><strong>Randomness and Non-Repeatability:</strong> Current tools are stochastic (random), making consistent storytelling nearly impossible. If you need to change one small detail, such as moving the camera to the left, you have to regenerate everything and often lose the parts you liked.</li>
+                    <li><strong>Lack of Object Permanence:</strong> AI models generate pixels (2D images), not places (3D environments). When you ask an AI to zoom in, it doesn't move a camera closer to an object. Instead, it paints a brand new picture that looks like a close-up, causing details to morph, shift, and break consistency.</li>
+                    <li><strong>No Incremental Editing:</strong> If you change one line of dialogue in a 10-minute video, you often have to re-generate and re-pay for the entire scene, risking visual changes you didn't want.</li>
+                    <li><strong>Prompt-Driven Chaos:</strong> There's no story structure, just prompts. This makes it impossible to maintain character consistency, scene continuity, or narrative coherence.</li>
+                </ul>
+
+                <h2>The StoryOS Solution</h2>
+                <p>
+                    StoryOS bridges this gap by introducing a "Compiler" approach to video production. We don't just generate video, we manage the state of the video.
+                </p>
+
+                <h3>The Orchestration Layer</h3>
+                <p>
+                    Instead of a random creative process, we use a logic-driven workflow:
+                </p>
+                <ul>
+                    <li><strong>Input:</strong> A structured script containing scenes, shots, and dialogue</li>
+                    <li><strong>Asset Management:</strong> The system checks the cache to see if we already have the audio for this line or if the background for Scene 2 is already generated</li>
+                    <li><strong>Smart Rendering:</strong> It only generates what is new, making the system deterministic (same script yields the same video) and drastically cheaper to run</li>
+                </ul>
+
+                <h3>The 3D Advantage</h3>
+                <p>
+                    To solve the "Pixel vs. Object" problem, StoryOS understands 3D space. We treat the output of AI as a Digital Puppet. By capturing the depth and geometry of a character, the system can lock their identity. When the script asks to move the camera, we don't guess. We simply rotate the puppet.
+                </p>
+                <p>
+                    Users never see a 3D interface or build meshes. We use Generative 3D technology (Gaussian Splatting) to create lightweight 3D representations automatically.
+                </p>
+
+                <h2>Technical Architecture</h2>
+                <p>
+                    StoryOS is built around a structured story representation, analogous to HTML for documents or JSON for data. This format is the backbone of control, determinism, and repeatability.
+                </p>
+
+                <h3>Compiler Flow</h3>
+                <ul>
+                    <li><strong>Script/YAML Input:</strong> Structured story format with scenes, shots, dialogue, and metadata</li>
+                    <li><strong>Story Interpretation:</strong> Reads the YAML, tracks scenes, beats, characters, and tone</li>
+                    <li><strong>Prompt Generation:</strong> Derives prompts from scene metadata, character definitions, and tone</li>
+                    <li><strong>Media Generation:</strong> Uses existing AI tools (Runway, Pika, ElevenLabs) with fixed parameters for consistency</li>
+                    <li><strong>Media Assembly:</strong> Stitches clips together, times dialogue and visuals, adds transitions using FFmpeg</li>
+                    <li><strong>Output:</strong> Final cinematic video (60-120 seconds) that is watchable, coherent, and repeatable</li>
+                </ul>
+
+                <h3>Build Strategy: Three Levels</h3>
+                <p><strong>Level 1: The Layered MVP</strong> (4-8 weeks to Beta)</p>
+                <ul>
+                    <li>Uses APIs like Runway or Luma to generate characters and backgrounds separately</li>
+                    <li>Uses Segment Anything (SAM) to extract characters, compositing them onto different backgrounds</li>
+                    <li>Soft consistency: locks character look using Reference Image APIs</li>
+                    <li>If user edits dialogue, only re-generates the lip-sync layer</li>
+                </ul>
+
+                <p><strong>Level 2: The Depth-Aware System</strong> (3-4 months)</p>
+                <ul>
+                    <li>Integrates Depth Maps (grayscale maps showing object distance)</li>
+                    <li>Enables cinematic camera moves and parallax in static scenes</li>
+                    <li>System knows character is in front of wall, allowing realistic camera movement</li>
+                </ul>
+
+                <p><strong>Level 3: The World Engine</strong> (9-12 months)</p>
+                <ul>
+                    <li>Generative 3D using Gaussian Splats</li>
+                    <li>User creates a character once, system builds lightweight 3D representation</li>
+                    <li>Character can be placed in any scene, from any angle, with perfect identity lock</li>
+                    <li>The "Netflix of AI" vision</li>
+                </ul>
+
+                <h2>Competitive Advantage</h2>
+                <p>
+                    While the industry races to build better engines (models), StoryOS is building the Assembly Line (the Compiler). By focusing on the Orchestration Layer, the code that manages the script, cache, and 3D assets, we capture value that model-builders ignore: Control, Consistency, and Scale.
+                </p>
+                <p>
+                    We can build the MVP today using existing APIs, while the industry naturally matures toward the 3D technologies that will unlock our full vision.
+                </p>
+
+                <h2>Investment & Impact</h2>
+                <p>
+                    StoryOS is currently in the demo phase, building a proof-of-concept to secure a $1 million investment from Comcast Corporation. This demo will demonstrate deterministic script-to-video compilation, proving that AI storytelling can be treated like software: versioned, cached, and selectively re-run.
+                </p>
+                <p>
+                    The demo goal is simple: when Comcast and other potential investors watch it and say "Oh, this is how AI storytelling becomes usable," we've proven our worth and secured the funding needed to revolutionize how stories are created in the AI era.
+                </p>
+                <p>
+                    With the $1 million investment, we will accelerate development of the full platform, expand the team, and bring StoryOS to market as the definitive solution for deterministic AI video production.
+                </p>
+
+                <div class="project-links-detail">
+                    <a href="#" class="project-link-detail" onclick="alert('StoryOS is currently in development. Demo coming soon!'); return false;">View Demo</a>
+                    <a href="#" class="project-link-detail secondary" onclick="alert('Repository will be available upon public release.'); return false;">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Nithin Balamurugan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

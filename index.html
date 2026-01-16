@@ -20,6 +20,7 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -39,12 +40,13 @@
                     <span class="greeting">Hello, I'm</span>
                     <span class="name">Nithin Balamurugan</span>
                 </h1>
-                <p class="hero-subtitle">I'm a computer science student at Western University</p>
+                <p class="hero-subtitle">Computer Science Student at University of Western Ontario | Graduating April 2027</p>
                 <p class="hero-description">
-                    Breaking into AI and research for Tiny Recursive Models (TRMs).
+                    AI Research Platform Developer | Co-author of "Tiny Recursive Models on ARC-AGI-1" Research Paper
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#experience" class="btn btn-secondary">Experience</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
@@ -66,14 +68,15 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a 3rd year student breaking away from just software development and into AI and new tech 
-                        research. I'm currently working for a startup at Cognitome.ai, where I am working with webdev
-                        and hands on work with AI.  I've co-authored our first paper "Tiny Recursive Models on ARC-AGI-1- Inductive Biases, Identity 
-                        Conditioning, and Test-Time Compute". 
+                        I'm a Computer Science student at the University of Western Ontario, graduating in April 2027. I'm currently 
+                        working as an AI Research Platform Intern at CognitomeAI, where I build core features for an AI-powered research 
+                        platform aggregating academic papers and generating interactive research maps. I've co-authored the research paper 
+                        "Tiny Recursive Models on ARC-AGI-1: Inductive Biases, Identity Conditioning, and Test-Time Compute," published on arXiv.
                     </p>
                     <p>
-                        I'm hoping to futher grow my knowledge and work expirience in a professional work environment and working towards 
-                        a career in tech consulting and sales/product managment. 
+                        Previously, I worked as a Data Engineer Intern at MomentumMind, where I optimized SQL queries, built fault-tolerant 
+                        ETL pipelines, and streamlined data transformation processes. I'm passionate about AI research, full-stack development, 
+                        and building scalable systems that solve real-world problems. 
                     <div class="skills">
                         <div class="skill-category">
                             <h3>Languages</h3>
@@ -135,11 +138,98 @@
         </div>
     </section>
 
+    <!-- Work Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title-role">
+                            <h3 class="experience-company">CognitomeAI</h3>
+                            <h4 class="experience-role">AI Research Platform Intern | Developer | Marketing | Research</h4>
+                        </div>
+                        <span class="experience-date">Sept. 2025 - May 2026</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul class="experience-list">
+                            <li>Built core features for an AI-powered research platform aggregating academic papers and generating interactive research maps using Python, FastAPI, Node.js, Next.js, Docker, and AWS for scalable deployment</li>
+                            <li>Co-authored research paper: "Tiny Recursive Models on ARC-AGI-1: Inductive Biases, Identity Conditioning, and Test-Time Compute," published on arXiv</li>
+                            <li>Performed empirical ablations to isolate effects of test-time compute, puzzle-identity conditioning, and recursion depth</li>
+                            <li>Benchmarked TRMs against a QLoRA-fine-tuned LLaMA 3 8B baseline, showing lower memory usage and higher inference throughput with comparable or better accuracy</li>
+                            <li>Found it was cheaper and faster than LLMs; researched how to implement into company use</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title-role">
+                            <h3 class="experience-company">MomentumMind</h3>
+                            <h4 class="experience-role">Data Engineer Intern</h4>
+                        </div>
+                        <span class="experience-date">May 2024 - Aug. 2025</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul class="experience-list">
+                            <li>Refactored and optimized advanced SQL queries leveraging CTEs, joins, and window functions to aggregate legal compliance data, cutting query latency by 40% and enabling real-time Tableau and Power BI dashboards</li>
+                            <li>Designed and built a fault-tolerant Python ETL pipeline to process municipal zoning PDFs, incorporating robust data-quality validation (schema checks, null handling) to support reliable analytics and ML workflows</li>
+                            <li>Streamlined data transformation pipelines using Python (Pandas) on AWS, replacing manual Excel-based processes and saving 5+ hours per week while improving overall KPI accuracy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+                <a href="project-storyos.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="storyosGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <rect width="400" height="300" fill="url(#storyosGrad)"/>
+                                    <circle cx="200" cy="80" r="30" fill="white" opacity="0.3"/>
+                                    <rect x="170" y="110" width="60" height="40" rx="5" fill="white" opacity="0.3"/>
+                                    <path d="M 150 160 L 200 140 L 250 160 L 200 180 Z" fill="white" opacity="0.3"/>
+                                    <text x="200" y="240" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle" font-weight="bold">StoryOS</text>
+                                    <text x="200" y="265" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" opacity="0.9">Video Orchestration Platform</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">StoryOS – Deterministic Video Orchestration</h3>
+                            <p class="project-description">
+                                Building an AI-native storytelling platform that transforms written scripts into cinematic, deterministic video stories. 
+                                Unlike prompt-based AI video tools, StoryOS introduces structure, control, and repeatability, treating video production 
+                                as a software engineering problem. Currently developing a proof-of-concept demo to secure a $1M investment from Comcast 
+                                Corporation and prove that deterministic AI storytelling is the future of video production.
+                            </p>
+                            <div class="project-tags">
+                                <span>AI/ML</span>
+                                <span>Video Generation</span>
+                                <span>Python</span>
+                                <span>3D Rendering</span>
+                                <span>Orchestration</span>
+                                <span>Startup</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-link">View Project →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
                 <a href="project-ai-finance-tracker.html" class="project-card-link">
                 <div class="project-card">
                     <div class="project-image">
@@ -148,9 +238,10 @@
                     <div class="project-content">
                         <h3 class="project-title">AI Finance Tracker</h3>
                         <p class="project-description">
-                            Built a full-stack AI finance chatbot using React, Node.js, and PostgreSQL to track expenses, 
-                            manage budgets, and visualize spending. Integrated a Python-based AI backend (FastAPI, OpenAI API, Pandas) 
-                            for natural-language queries and personalized insights; deployed with Docker on Heroku/Vercel.
+                            Built a full-stack AI finance application using React, Node.js, and PostgreSQL to track expenses, budgets, and spending, 
+                            with secure user authentication and account management via Supabase, including protected routes, session handling, 
+                            and user-specific data isolation. Developed a Python-based AI backend (FastAPI) that leverages Pandas for data analysis 
+                            and OpenAI GPT-3.5-turbo for natural language processing, implementing a hybrid AI system for personalized financial insights.
                         </p>
                         <div class="project-tags">
                             <span>React</span>
@@ -159,6 +250,7 @@
                             <span>Python</span>
                             <span>FastAPI</span>
                             <span>OpenAI</span>
+                            <span>Supabase</span>
                             <span>Docker</span>
                         </div>
                         <div class="project-links">
@@ -178,7 +270,7 @@
                         <p class="project-description">
                             Developed a high-accuracy PDF-to-CSV conversion algorithm using Python that extracts every table 
                             into separate CSV files, generates a full-document text file, and outputs structural metadata files 
-                            detailing table outlines, dimensions, and formatting—robust across any document layout. Built a modular 
+                            detailing table outlines, dimensions, and formatting, robust across any document layout. Built a modular 
                             extraction pipeline using Docling, PyMuPDF, Pandas, and a 3-layer OCR stack.
                         </p>
                         <div class="project-tags">
@@ -225,8 +317,20 @@
                     <div class="project-image">
                         <div class="project-placeholder">
                             <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" fill="#e8e8e8"/>
-                                <text x="200" y="150" font-family="Arial" font-size="18" fill="#999" text-anchor="middle">Project Image</text>
+                                <defs>
+                                    <linearGradient id="portfolioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="400" height="300" fill="url(#portfolioGrad)"/>
+                                <rect x="100" y="80" width="200" height="140" rx="8" fill="white" opacity="0.2"/>
+                                <rect x="120" y="100" width="160" height="20" rx="3" fill="white" opacity="0.3"/>
+                                <rect x="120" y="130" width="140" height="15" rx="2" fill="white" opacity="0.25"/>
+                                <rect x="120" y="150" width="100" height="15" rx="2" fill="white" opacity="0.25"/>
+                                <rect x="120" y="170" width="120" height="15" rx="2" fill="white" opacity="0.25"/>
+                                <circle cx="180" cy="200" r="25" fill="white" opacity="0.2"/>
+                                <rect x="220" y="185" width="50" height="30" rx="4" fill="white" opacity="0.2"/>
                             </svg>
                         </div>
                     </div>
@@ -247,6 +351,52 @@
                         </div>
                         <div class="project-links">
                                 <span class="project-link">View Website →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="project-bookbuds.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="bookbudsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <rect width="400" height="300" fill="url(#bookbudsGrad)"/>
+                                    <rect x="100" y="90" width="50" height="70" rx="3" fill="white" opacity="0.4"/>
+                                    <rect x="160" y="85" width="50" height="75" rx="3" fill="white" opacity="0.4"/>
+                                    <rect x="220" y="95" width="50" height="65" rx="3" fill="white" opacity="0.4"/>
+                                    <line x1="125" y1="110" x2="140" y2="110" stroke="white" stroke-width="1.5" opacity="0.5"/>
+                                    <line x1="125" y1="130" x2="140" y2="130" stroke="white" stroke-width="1.5" opacity="0.5"/>
+                                    <line x1="125" y1="150" x2="135" y2="150" stroke="white" stroke-width="1.5" opacity="0.5"/>
+                                    <circle cx="280" cy="200" r="30" fill="white" opacity="0.25"/>
+                                    <path d="M 270 200 L 280 190 L 290 200 L 280 210 Z" fill="white" opacity="0.4"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">BookBuds</h3>
+                            <p class="project-description">
+                                Built a full-stack mobile reading log application using React Native and Expo, enabling chapter-level note-taking 
+                                with offline-first persistence via AsyncStorage and cross-platform support for iOS and Android. Implemented social 
+                                features using Firebase Authentication and Cloud Firestore, including user accounts, friend connections, and real-time 
+                                commenting on shared chapter notes. Integrated an AI chatbot to summarize and clarify user notes.
+                            </p>
+                            <div class="project-tags">
+                                <span>React Native</span>
+                                <span>Expo</span>
+                                <span>Firebase</span>
+                                <span>Firestore</span>
+                                <span>AsyncStorage</span>
+                                <span>AI</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-link">View Project →</span>
                             </div>
                         </div>
                     </div>

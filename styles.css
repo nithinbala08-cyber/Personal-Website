@@ -373,6 +373,111 @@ body {
     box-shadow: var(--shadow);
 }
 
+/* Experience Section */
+.experience {
+    padding: 100px 0;
+    background-color: var(--bg-color);
+}
+
+.experience-timeline {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.experience-item {
+    background-color: var(--bg-light);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-title-role {
+    flex: 1;
+}
+
+.experience-company {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.experience-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+.experience-date {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    white-space: nowrap;
+}
+
+.experience-content {
+    margin-top: 1rem;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-list li {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--secondary-color);
+    line-height: 1.7;
+}
+
+.experience-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.experience-list li:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+    }
+    
+    .experience-date {
+        align-self: flex-start;
+    }
+    
+    .experience-item {
+        padding: 1.5rem;
+    }
+}
+
 /* Projects Section */
 .projects {
     padding: 100px 0;
