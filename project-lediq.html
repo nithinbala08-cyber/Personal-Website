@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="StoryOS - Deterministic Video Orchestration Platform">
-    <title>StoryOS - Nithin Balamurugan</title>
+    <meta name="description" content="LedIq - Banking System Replica on IBM z/OS Mainframe">
+    <title>LedIq - Nithin Balamurugan</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,27 +121,6 @@
             background-color: var(--primary-color);
             color: white;
         }
-        .investment-badge {
-            display: inline-block;
-            padding: 8px 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-        .highlight-box {
-            background-color: var(--bg-light);
-            border-left: 4px solid var(--primary-color);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-        .highlight-box p {
-            margin-bottom: 0;
-            font-weight: 500;
-        }
         @media (max-width: 600px) {
             .project-detail-title {
                 font-size: 2rem;
@@ -159,6 +138,7 @@
             <ul class="nav-menu">
                 <li><a href="index.html#home" class="nav-link">Home</a></li>
                 <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#experience" class="nav-link">Experience</a></li>
                 <li><a href="index.html#projects" class="nav-link">Projects</a></li>
                 <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -181,53 +161,52 @@
             </a>
 
             <div class="project-detail-header">
-                <div class="investment-badge" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">Demo Project for Media Company</div>
-                <h1 class="project-detail-title">StoryOS – Deterministic Video Orchestration</h1>
+                <h1 class="project-detail-title">LedIq</h1>
                 <div class="project-detail-meta">
                     <div class="project-detail-tags">
-                        <span>3D Rendering</span>
-                        <span>Point Clouds</span>
-                        <span>Video Generation</span>
-                        <span>Python</span>
-                        <span>AI/ML</span>
+                        <span>COBOL</span>
+                        <span>IBM z/OS</span>
+                        <span>zCX</span>
+                        <span>Node.js</span>
+                        <span>FastAPI</span>
+                        <span>XGBoost</span>
+                        <span>SHAP</span>
+                        <span>IBM Db2</span>
+                        <span>JCL</span>
+                        <span>REXX</span>
+                        <span>ONNX</span>
                     </div>
                 </div>
             </div>
 
             <div class="project-detail-content">
-                <div class="highlight-box">
-                    <p><strong>Project Overview:</strong> StoryOS is a demo project being developed for a media company to address inconsistency issues in AI video regeneration. The goal is to create a deterministic system where video generation produces consistent, repeatable results rather than random variations.</p>
-                </div>
-
-                <h2>The Problem</h2>
                 <p>
-                    Current AI video generation tools suffer from inconsistency in video regeneration. When you regenerate a video or make small changes, 
-                    the output often varies unpredictably, causing characters to change appearance, scenes to shift, and details to morph. This inconsistency 
-                    makes it impossible to maintain continuity and control in video production workflows.
+                    LedIq is a functional replica of a top-5 banking system built on an IBM z/OS mainframe using zCX. The system implements 
+                    core mainframe components with COBOL, JCL, SQL, and REXX, and integrates a Node.js frontend with a FastAPI backend 
+                    to support real-time credit risk evaluation.
                 </p>
 
-                <h2>My Role</h2>
-                <p>
-                    I'm working on 3D rendering and point cloud technology to solve this inconsistency problem. By creating 3D representations of characters 
-                    and scenes using point clouds, we can maintain consistent geometry and appearance across video regenerations. This approach ensures that 
-                    when a video is regenerated or modified, the core 3D structure remains stable, eliminating the randomness that plagues current AI video tools.
-                </p>
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Built on IBM z/OS mainframe using zCX with COBOL, JCL, SQL, and REXX</li>
+                    <li>Node.js frontend with FastAPI backend for real-time operations</li>
+                    <li>ONNX-hosted XGBoost model for real-time credit risk scoring</li>
+                    <li>SHAP implementation for explainable AI and model interpretability</li>
+                    <li>IBM Db2 database for storing predictions and explanations</li>
+                </ul>
 
-                <h2>Technical Approach</h2>
-                <p>
-                    The solution involves creating 3D representations of characters and scenes using point cloud technology. By maintaining consistent 3D geometry 
-                    across video regenerations, we ensure that characters and objects retain their appearance and structure, eliminating the randomness that 
-                    causes inconsistency in current AI video generation systems.
-                </p>
-                <p>
-                    My work focuses specifically on the 3D rendering pipeline and point cloud generation, which form the foundation for maintaining consistency 
-                    in video regeneration. This approach allows the system to preserve character identity and scene structure even when videos are regenerated 
-                    or modified.
-                </p>
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li><strong>Mainframe:</strong> IBM z/OS, zCX, COBOL, JCL, REXX, IBM Db2</li>
+                    <li><strong>Web:</strong> Node.js, FastAPI</li>
+                    <li><strong>ML/AI:</strong> XGBoost, ONNX, SHAP</li>
+                </ul>
 
-                <div class="project-links-detail">
-                    <a href="#" class="project-link-detail" onclick="alert('StoryOS is currently in development. Demo coming soon!'); return false;">View Demo</a>
-                </div>
+                <h2>Project Context</h2>
+                <p>
+                    Developed as part of the Western Cyber Society club at the University of Western Ontario, demonstrating the integration 
+                    of legacy mainframe technologies with modern web development and AI/ML capabilities.
+                </p>
             </div>
         </div>
     </section>
