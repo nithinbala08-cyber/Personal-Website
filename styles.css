@@ -718,6 +718,10 @@ body {
     cursor: zoom-in;
 }
 
+.research-blog-image-single {
+    margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
     .research-blog-image-row {
         grid-template-columns: 1fr;
