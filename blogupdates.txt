@@ -115,3 +115,12 @@ Question: How can we updated the TRM to comprehend text input and not just pixel
 
 **Blog8Flowchart.jpg here***
 ---------------------------------
+BLOG9 | April 8th 2026
+
+Title : Project - Phase A 
+
+Our approach to "no text-value" TRM is to speak in it's language. Turning our words into a byte grid will be out first trial at this (probably will not be out last).
+
+Updated flowchart and notes: 
+**PhaseA.jpg***   **PhaseAnotes.jpg**
+---------------------------------
